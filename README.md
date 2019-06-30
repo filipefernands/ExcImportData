@@ -43,6 +43,7 @@ exec.time.sync=10
 ```
 5. Configure a geração de logs
 ```properties
+# Configurações de logs nível "CRITICAL, ERROR, WARNING, INFO, DEBUG, NOTSET
 log.level=INFO
 log.name=ExcImportData
 log.dir=C:/tmp/log/
