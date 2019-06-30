@@ -1,0 +1,11 @@
+{
+  	"table": "pessoa",
+  	"typeOp": "insert",
+	"fields": [
+    	"name",
+		"date_payment",
+		"product",
+		"value",
+		"address"
+  	]
+}
