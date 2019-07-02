@@ -12,7 +12,7 @@ db.password=
 db.host=
 db.database=
 ```
-2. Configure a estrutura da tabela que recebera os dados em um arquivo **.json** conforme exemplo, deverá ser configurado também o 
+2. Configure a estrutura da tabela que irá receber os dados em um arquivo **.json** conforme exemplo, deverá ser configurado também o 
 tipo de operação **typeOp**, pois em breve será permitido executar comandos de **update**.
 
 ```json
