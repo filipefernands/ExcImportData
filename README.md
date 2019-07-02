@@ -4,7 +4,7 @@ O ExcImportData é um script processador de arquivos Excel em fase de desenvolvi
 
 Atualmente a conexão de banco de dados é apenas com o MySQL, em breverá será permitido importados dados para o PostgreSQL
 
-#### Configurações basicas para utilização
+#### Configurações básicas para utilização
 1. Informe a conexão do banco de dados:
 ```properties
 db.user=
