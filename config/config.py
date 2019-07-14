@@ -7,12 +7,9 @@ from properties.p import Property
 # noinspection PyTypeChecker
 class ConfigGlobal:
     """
-    Class para definição de configurações globais e do arquivo .properties
+    Classe para definição de configurações globais e do arquivo .properties
     """
 
-    data_base_config = ""
-    prop_config = ""
-    prop = ""
     new_file = {"geraLog": True}
 
     def __init__(self):
@@ -82,11 +79,10 @@ class ConfigGlobal:
             for file in os.listdir(self.prop['excel.dir']):
 
                 if file == self.prop['excel.name']:
+
                     file = str(file).split(".")
                     new_name = date + "_" + file[0] + "." + file[1]
-
                     os.rename(self.prop['excel.dir'] + self.prop['excel.name'], self.prop['excel.dir'] + new_name)
-
                     self.new_file['oldFile'] = file[0]
                     self.new_file['newFile'] = str(new_name).split(".")[0]
 

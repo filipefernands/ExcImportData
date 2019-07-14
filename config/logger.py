@@ -6,7 +6,7 @@ from config.config import ConfigGlobal
 
 class Logger:
     """
-    Class de manipulação do arquivo de logs
+    Classe de manipulação do arquivo de logs
     """
 
     print_conn_success = True

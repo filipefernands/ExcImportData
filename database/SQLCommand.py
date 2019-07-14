@@ -4,7 +4,7 @@ from config.logger import Logger
 
 class SQLCommand:
     """
-    Class de execução de scripts no banco de dados
+    Classe de execução de scripts no banco de dados
     """
 
     conn = None

@@ -16,7 +16,7 @@ db.database=
 tipo de operação **typeOp**, pois em breve será permitido executar comandos de **update**.
 
 ```json
-table.json
+
 {
   "table": "contact",
   "typeOp": "insert",

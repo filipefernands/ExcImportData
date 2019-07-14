@@ -12,8 +12,7 @@ from config.logger import Logger
 
 class Processors:
     """
-    Class de processamentos dos conjuntos de informações .properties e arquivo excel para carregar as informações no
-    banco de dados informado
+    Classe de processamento que será responsável por processar as informações que serão inseridas no banco de dados
     """
 
     params_plan = None  # Recebe o cabeçalho da planilha para passar como parâmetros nas query's
@@ -45,6 +44,7 @@ class Processors:
         if Processors.command_type(table['typeOp']) == 30:
 
             """
+                Parâmetros para montar a query de "INSERT"
                 {0} - typeOp
                 {1} - table
                 {2} - fields
@@ -80,7 +80,7 @@ class Processors:
     def ready_file_excel(self):
         """
         Processa o arquivo Excel e a partir dele gera uma lista de dados para ser gravar no banco de dados
-        :return:
+        :return: data_list: Lista com os dados que serão inseridos no banco de dados
         """
         path = self.config.file_data()
         row_value = []  # Recebe os valores de cada col/row
@@ -107,9 +107,9 @@ class Processors:
                     row = plan.row_values(rownum)
 
                     '''
-                    Este trecho do código valida o tipo de dado armazenado em cada coluna, para então verifica os 
-                    que são 'date' pois estes na leitura do arquivo são gerados como float e deve ser convertidos 
-                    novamente para o formato data
+                    Este trecho do código valida o tipo de dado armazenado em cada coluna, para então verificar os 
+                    que são 'date' pois estes na leitura do arquivo são gerados como float e é preciso realizar  a 
+                    conversão para date 'y-m-d'
                     '''
                     for col in range(len(plan.row_values(rownum))):
 
